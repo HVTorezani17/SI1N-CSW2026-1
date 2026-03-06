@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <link rel="shortcut icon" href="favicon-32x32-bom.png" type="image/x-icon">
+</head>
+<body>
+
+    <h1> Principais Formatações </h1>
+    <br>
+    <h2> Negrito/Destaque </h2>
+    <p>Na frase temos uma <b>parte do texto em negrito</b>usando a tag B (não semântica)</p>
+    <p>Na frase temos uma <strong>parte do texto em negrito</strong>usando a tag strong (com semântica) </p> 
+    <br>
+    <h2>Itálico/Ênfase</h2>
+    <p>Na frase vamos entrar com uma palavra em <i>Itálico</i> usando a tag i (Não semântica)</p>
+    <p>Na frase vamos entrar com uma palavra em <em>Itálico</em> usando a tag EM (Com semântica)</p>
+    <br>
+    <h2>Texto Marcador</h2>
+    <p>Aqui vamos usar um texto com destaque <mark>de marcador de texto</mark> usando mark</p>
+    <p>Aqui vamos usar um texto com destaque <mark>de marcador de texto</mark> usando mark</p>
+    <br>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos trabalhando aqui om um <BIG>Texto Grande</BIG> e um <small>texto pequeno</small> nessa frase</p>
+    <br>
+    <h2>Texto Deletado</h2>
+    <p>Nesse parágrafo vamos trabalhar com um texto <del> que foi apagado</del> da frase</p>
+    <br>
+    <h2>Texto Inscrito</h2>
+    <p>Nessa frase vamos demonstrar como <u> destacar um texto inserido</u> de forma não semântica</p>
+    <p>Nessa frase vamos demonstrar como <ins> destacar um texto inserido</ins> de forma semântica</p>
+    <br>
+    <h2>Texto Sobrescrito</h2>
+    <p>Vamos demonstrar uma formula da equação do segundo gau ax<sup>2</sup>+bx+c=0</p> usando a tag <sup>sup</sup>
+    <br>
+    <h2>Texto Sobrescrito</h2>
+    <p>Vamos demonstrar o texto subescrito com a formula da água H<sub>2</sub>O
+    <br>
+    <h2>Trecho de Código Fonte</h2>
+    <p>Nesse exemplo vou demonstrar um trecho de código</p>
+    <p>Inserindo o comando document.getElementById('edtCodigo') que é um comando java script</p>
+    <p>Inserindo um código longo em python</p>
+    <pre>
+        <code>
+            import math
+
+            # entrada dos coeficientes
+            a = float(input("Digite o valor de a: "))
+            b = float(input("Digite o valor de b: "))
+            c = float(input("Digite o valor de c: "))
+
+            # cálculo do delta
+            delta = b**2 - 4*a*c
+
+            print("Delta =", delta)
+
+            if delta < 0:
+                print("A equação não possui raízes reais.")
+            elif delta == 0:
+                x = -b / (2*a)
+                print("A equação possui uma raiz real:")
+                print("x =", x)
+            else:
+                x1 = (-b + math.sqrt(delta)) / (2*a)
+                x2 = (-b - math.sqrt(delta)) / (2*a)
+                print("A equação possui duas raízes reais:")
+                print("x1 =", x1)
+                print("x2 =", x2)
+                    </code>
+                </pre>
+    <br>
+    <h2>Citações (quations) simples</h2>
+    <p>Segundo Steve Jobs "A Tecnologia move o mundo"</p>
+    <br>
+    <h2>Citações Complexas (Livros)</h2>
+    <blockquote cite="https://journals.sagepub.com/doi/abs/10.1177/0170840601226003">
+    <p>This paper explores the trajectories of three key technologies in Formula 1 racing at the component, firm and system levels of analysis. The purpose is to gain an understanding of the evolutionary forces that contribute to the emergence and survival of dominant designs. Based on archival data and contemporaneous accounts of the period 1967-1982, we develop a series of propositions specifying the evolutionary forces acting on technological trajectories within each level of analysis. The resulting framework leads to a set of predictions about relationships between technological transparency, co-evolution, and the emergence of dominant designs. Specifically, we argue that when the costs and difficulty associated with transferring component knowledge between firms is low (technological transparency is high), technologies tend to co-evolve across firms, leading to the development of complementary technologies and increasing the likelihood of industry dominance. Where transparency is low, however, technologies tend to co-evolve across functions within firms, leading to the development of competing technologies across firms, increasing the likelihood of a technology's dominance within the firm. The data and argument suggest that the forces acting on these two types of technological trajectories are self-reinforcing, so that as momentum builds behind a trajectory, it becomes more likely that its evolutionary path will end in either firm-or system-level dominance.</p>
+    </blockquote>
+
