@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding-bottom: 16px;
+}
+
+.banner {
+  background: #2255aa;
+  padding: 4px;
+  margin-bottom: 12px;
+}
+
+.banner-inner {
+  position: relative;
+  height: 90px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-idade .banner-inner {
+  background: linear-gradient(135deg, #111 0%, #444 50%, #111 100%);
+}
+
+.banner-calc .banner-inner {
+  background: #d4a017;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 18px,
+    rgba(0,0,0,0.15) 18px,
+    rgba(0,0,0,0.15) 36px
+  );
+}
+
+.banner-calc .banner-inner::before {
+  content: "+ − × ÷ + − × ÷ + − × ÷";
+  position: absolute;
+  top: 8px;
+  font-size: 28px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.25);
+  letter-spacing: 6px;
+  white-space: nowrap;
+}
+
+.banner-calc .banner-inner::after {
+  content: "× ÷ + − × ÷ + − × ÷ + −";
+  position: absolute;
+  bottom: 8px;
+  font-size: 28px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.25);
+  letter-spacing: 6px;
+  white-space: nowrap;
+}
+
+.banner-title {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  letter-spacing: 1px;
+}
+
+.form-area {
+  padding: 0 12px;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.field-row label {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.field-row input[type="number"] {
+  width: 60px;
+}
+
+.calc-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.calc-row input[type="number"] {
+  width: 120px;
+}
+
+input[type="number"] {
+  border: 1px solid #999;
+  padding: 4px 6px;
+  font-size: 14px;
+}
+
+select {
+  border: 1px solid #999;
+  padding: 4px 6px;
+  font-size: 14px;
+}
+
+.btn-blue {
+  display: block;
+  width: 100%;
+  background: #2255cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-blue:hover {
+  background: #1a44aa;
+}
+
+.result-label {
+  font-size: 14px;
+  padding: 0 2px;
+  min-height: 20px;
+}
